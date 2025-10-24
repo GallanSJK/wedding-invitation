@@ -53,7 +53,7 @@ export const data = {
     galeri: [
         {
             id: 1,
-            image: './src/assets/images/6.png'
+            image: './src/assets/images/8.png'
         },
         {
             id: 2,
@@ -61,7 +61,7 @@ export const data = {
         },
         {
             id: 3,
-            image: './src/assets/images/8.png'
+            image: './src/assets/images/6.png'
         },
         {
             id: 4,
@@ -88,7 +88,7 @@ export const data = {
         },
     ],
 
-    audio: './src/assets/audio/wedding.mp3',
+    audio: './src/assets/audio/wedding1.mp3',
 
     api: 'https://script.google.com/macros/s/AKfycbwZ4KjCqWrJGghwXBmsAqJ1dCByrIhQc0fbCZ-fFipvUL1cDAifjzShStwJsqsCkuqw/exec',
 
