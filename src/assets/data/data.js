@@ -6,7 +6,7 @@ export const data = {
             child: 'Putra ke 1',
             father: 'Agus Ibnu Alfan',
             mother: 'Siti Maryam',
-            image: './src/assets/images/cowo.png'
+            image: './src/assets/images/cowo1.png'
         },
         P: {
             id: 2,
@@ -14,10 +14,11 @@ export const data = {
             child: 'Putri ke 1',
             father: 'Totok Istiyono',
             mother: 'Riefna Khuljannah',
-            image: './src/assets/images/cewe.png'
+            image: './src/assets/images/cewe1.png'
         },
 
-        couple: './src/assets/images/couple.png'
+        couple: './src/assets/images/couple1.png',
+        couple1: './src/assets/images/couple2.png'
     },
 
     time: {
@@ -52,23 +53,23 @@ export const data = {
     galeri: [
         {
             id: 1,
-            image: './src/assets/images/1.png'
+            image: './src/assets/images/6.png'
         },
         {
             id: 2,
-            image: './src/assets/images/2.png'
+            image: './src/assets/images/7.png'
         },
         {
             id: 3,
-            image: './src/assets/images/3.png'
+            image: './src/assets/images/8.png'
         },
         {
             id: 4,
-            image: './src/assets/images/4.png'
+            image: './src/assets/images/9.png'
         },
         {
             id: 5,
-            image: './src/assets/images/5.png'
+            image: './src/assets/images/10.png'
         }
     ],
 
@@ -89,7 +90,7 @@ export const data = {
 
     audio: './src/assets/audio/wedding.mp3',
 
-    api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
+    api: 'https://script.google.com/macros/s/AKfycbwZ4KjCqWrJGghwXBmsAqJ1dCByrIhQc0fbCZ-fFipvUL1cDAifjzShStwJsqsCkuqw/exec',
 
     navbar: [
         {
