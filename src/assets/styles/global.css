@@ -25,12 +25,19 @@ html {
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    /* Prevent text selection to reduce copy attempts */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
     color: var(--primary-font-color);
     overflow-y: hidden;
+    /* Improve touch handling and reduce double-tap zoom triggers */
+    touch-action: manipulation;
 }
 
 body.active {
