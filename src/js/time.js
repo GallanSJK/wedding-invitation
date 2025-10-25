@@ -6,6 +6,14 @@ export const time = () => {
     const mapLink = timeContainer.querySelector('a');
     const addressParagraph = timeContainer.querySelector('a + p');
 
+    // Set dynamic background image from data.js if provided
+    if (data?.time?.background) {
+        timeContainer.style.backgroundImage = `url('${data.time.background}')`;
+        timeContainer.style.backgroundPosition = 'center';
+        timeContainer.style.backgroundRepeat = 'no-repeat';
+        timeContainer.style.backgroundSize = 'cover';
+    }
+
     const createTimeListItem = (title, details) => (
         `<h3>${title}</h3>
          <p>${details.day}, ${details.date} ${details.month} ${details.year} <br> 

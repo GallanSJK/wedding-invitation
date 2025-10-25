@@ -2,8 +2,24 @@
     width: 100%;
     min-height: 100vh;
     text-align: center;
+    margin-top: 200px;
     padding: 10rem 8rem;
     position: relative;
+    color: #fff;
+    overflow: hidden; /* ensure overlay is clipped */
+}
+
+.time::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.time > * {
+    position: relative;
+    z-index: 1;
 }
 
 .time h2 {
@@ -28,9 +44,9 @@
 
 .time a {
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
-    background-color: #000;
+    background-color: #fff;
     margin: 2rem auto 1rem;
     border-radius: 20px;
     width: fit-content;

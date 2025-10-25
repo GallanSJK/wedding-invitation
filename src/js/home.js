@@ -5,6 +5,25 @@ export const home = () => {
     const homeContainer = document.querySelector('.home');
     const [_, figureElement, timeElement, homeTime, calendarAnchor] = homeContainer.children;
 
+    // Set dynamic background image with x/y controls (and mobile overrides)
+    const applyHomeBackground = () => {
+        if (!data?.home?.background) return;
+
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+        const x = isMobile ? (data.home.xMobile ?? data.home.x ?? 'center') : (data.home.x ?? 'center');
+        const y = isMobile ? (data.home.yMobile ?? data.home.y ?? 'center') : (data.home.y ?? 'center');
+
+        homeContainer.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('${data.home.background}')`;
+        homeContainer.style.backgroundPosition = `${x} ${y}`;
+        homeContainer.style.backgroundRepeat = 'no-repeat';
+        homeContainer.style.backgroundSize = 'cover';
+        homeContainer.style.color = '#fff';
+    };
+
+    applyHomeBackground();
+    window.addEventListener('resize', applyHomeBackground);
+
     const generateFigureContent = ({bride}) => {
         const {L: {name: brideLName}, P: {name: bridePName}, couple1: coupleImage} = bride;
         return `

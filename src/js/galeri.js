@@ -71,7 +71,7 @@ export const galeri = () => {
     });
 
     initializeGallery();
-    setInterval(autoPlayGallery, 3000);
+    setInterval(autoPlayGallery, 6000);
 
     paginationElement.querySelectorAll('li').forEach((pagination) => {
         pagination.addEventListener('click', (e) => {

@@ -21,7 +21,21 @@ export const data = {
         couple1: './src/assets/images/couple2.png'
     },
 
+    home: {
+        // Background image for the Home section
+        background: './src/assets/images/couple4.png',
+        // Simple background position controls
+        // Use values like 'center', 'left', 'right' or percentages like '50%'
+        x: 'center',
+        y: 'center',
+        // Mobile overrides (optional)
+        xMobile: 'center',
+        yMobile: 'top'
+    },
+
     time: {
+        // Background image for the Waktu & Tempat section
+        background: './src/assets/images/couple3.png',
         marriage: {
             year: '2025',
             month: 'Desember',
