@@ -168,3 +168,97 @@
     top:2rem;
     left: 10rem;
 }
+
+/* Lightbox (fullscreen viewer) */
+.galeri .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.galeri .lightbox.active { display: flex; }
+
+.galeri .lightbox__stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.galeri .lightbox__img {
+    position: relative;
+    z-index: 1;
+    max-width: 90vw;
+    max-height: 90vh;
+    will-change: transform;
+    transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(var(--scale, 1));
+    cursor: grab;
+    user-select: none;
+}
+
+.galeri .lightbox__controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* above image so clicks are not blocked on desktop */
+}
+
+.galeri .lightbox__btn {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    backdrop-filter: blur(3px);
+}
+
+.galeri .lightbox__btn:hover { background: rgba(255,255,255,0.22); cursor: pointer; }
+
+.galeri .lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: rgba(255,255,255,0.7);
+    background: none;
+    border: none;
+    z-index: 2;
+    /* Bigger tap target on mobile */
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+}
+
+.galeri .lightbox__nav:hover { color: #fff; cursor: pointer; }
+
+.galeri .lightbox__nav--prev { left: 1rem; }
+.galeri .lightbox__nav--next { right: 1rem; }
+
+.galeri .lightbox__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.galeri .lightbox__close:hover { color: #fff; cursor: pointer; }
