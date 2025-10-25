@@ -96,9 +96,9 @@ export const data = {
         },
         {
             id: 2,
-            name: 'Gallan Stefan Jayakelana',
-            icon: './src/assets/images/bri.png',
-            rekening: '043701029370534'
+            name: 'Apriefta Alief Perma',
+            icon: './src/assets/images/mandiri.png',
+            rekening: '1630003022848'
         },
     ],
 
