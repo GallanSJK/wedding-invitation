@@ -33,6 +33,11 @@ export const data = {
         yMobile: 'top'
     },
 
+    footer: {
+        // Background image for the footer section
+        background: './src/assets/images/couple6.png'
+    },
+
     time: {
         // Background image for the Waktu & Tempat section
         background: './src/assets/images/couple3.png',
@@ -71,15 +76,15 @@ export const data = {
         },
         {
             id: 2,
-            image: './src/assets/images/7.png'
-        },
-        {
-            id: 3,
             image: './src/assets/images/6.png'
         },
         {
+            id: 3,
+            image: './src/assets/images/11.png'
+        },
+        {
             id: 4,
-            image: './src/assets/images/9.png'
+            image: './src/assets/images/7.png'
         },
         {
             id: 5,

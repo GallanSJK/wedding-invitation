@@ -2,6 +2,7 @@ import { data } from "../assets/data/data.js";
 
 export const time = () => {
     const timeContainer = document.querySelector('.time');
+    const footerEl = document.querySelector('footer');
     const [marriageDiv, receptionDiv] = timeContainer.querySelectorAll('div div');
     const mapLink = timeContainer.querySelector('a');
     const addressParagraph = timeContainer.querySelector('a + p');
@@ -25,4 +26,10 @@ export const time = () => {
 
     mapLink.href = data.link.map;
     addressParagraph.textContent = data.time.address;
+
+    // Apply dynamic footer background if provided
+    if (data?.footer?.background && footerEl) {
+        footerEl.style.background = `linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('${data.footer.background}') center/cover no-repeat`;
+        footerEl.style.color = '#fff';
+    }
 };
