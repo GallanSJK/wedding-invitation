@@ -1,5 +1,6 @@
 // ==== CONFIG ====
 // Ganti dengan URL Google Sheets Anda yang sudah di-publish sebagai CSV
+// Format: https://docs.google.com/spreadsheets/d/ID_SPREADSHEET/gviz/tq?tqx=out:csv
 const sheetUrl = "https://docs.google.com/spreadsheets/d/INI DI ISI DENGAN ID SPREADSHEET KAMU/gviz/tq?tqx=out:csv";
 const delay = 7000; // jeda antar kirim (ms) — 7000 = 7 detik
 const weddingLink = "https://gallansjk.github.io/wedding-invitation/?to=";

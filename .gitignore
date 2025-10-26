@@ -1,1 +1,2 @@
-../src/assets/data/script_blast_wa.js
+# Ignore private WA blast script (path is relative to repo root)
+src/assets/data/script_blast_wa.js
