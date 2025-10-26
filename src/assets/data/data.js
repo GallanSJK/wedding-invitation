@@ -1,20 +1,20 @@
 export const data = {
     bride: {
-        L: {
+        P: {
             id: 1,
+            name: 'Apriefta Alief P.P.',
+            child: 'Putri ke 1',
+            father: 'Totok Istiyono',
+            mother: 'Riefna Khuljanah',
+            image: './src/assets/images/cewe1.png'
+        },
+        L: {
+            id: 2,
             name: 'Gallan Stefan J.K.',
             child: 'Putra ke 1',
             father: 'Agus Ibnu Alfan',
             mother: 'Siti Maryam',
             image: './src/assets/images/cowo1.png'
-        },
-        P: {
-            id: 2,
-            name: 'Apriefta Alief P.P.',
-            child: 'Putri ke 1',
-            father: 'Totok Istiyono',
-            mother: 'Riefna Khuljannah',
-            image: './src/assets/images/cewe1.png'
         },
 
         couple: './src/assets/images/couple1.png',

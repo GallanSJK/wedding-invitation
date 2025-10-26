@@ -14,7 +14,7 @@ export const bride = () => {
         </li>`
     )
 
-    const brideData = [data.bride.L, data.bride.P];
+    const brideData = [data.bride.P, data.bride.L];
 
     renderElement(brideData, brideCouple, brideListItem);
 }
